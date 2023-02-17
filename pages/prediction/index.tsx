@@ -125,7 +125,7 @@ const Prediction = () => {
           title="ADDRESS"
           value={address}
           setValue={setaddress}
-          inputType="number"
+          inputType="text"
           data={data && data.map((item: any) => item.address)}
           loading={loading}
         />
