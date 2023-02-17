@@ -123,7 +123,7 @@ const Prediction = () => {
       <div className="predition-wrapper">
         <Dropdown
           title="ADDRESS"
-          value={'address'}
+          value={address}
           setValue={setaddress}
           inputType="number"
           data={data && data.map((item: any) => item.address)}
