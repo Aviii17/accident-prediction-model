@@ -63,8 +63,7 @@ const Dropdown = ({
 }
 
 const Prediction = () => {
-  const [latitude, setlatitude] = useState(0)
-  const [longitude, setlongitude] = useState(0)
+  const [address, setaddress] = useState('')
   const [weather_condition, setweather_condition] = useState('')
   const [date, setdate] = useState('')
   const [light_condition, setlight_condition] = useState('')
@@ -84,15 +83,9 @@ const Prediction = () => {
     setLoading(true)
     const result: any = list.filter((item: any) => {
       let match = false
-
-      if (Number(longitude)) {
-        match = Number(item.longitude) === Number(longitude)
+      if (address) {
+        match = item.address === address
       }
-
-      if (Number(latitude)) {
-        match = Number(item.latitude) === Number(latitude)
-      }
-
       if (weather_condition) {
         match = item.weather_condition === weather_condition
       }
@@ -108,10 +101,10 @@ const Prediction = () => {
       if (date) {
         match = item.date === date
       }
+
       return match
     })
-
-    setData(result)
+    setData(result && result.length > 0 ? result : list)
     return setLoading(false)
   }
 
@@ -122,71 +115,56 @@ const Prediction = () => {
 
     return () => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    latitude,
-    longitude,
-    weather_condition,
-    date,
-    light_condition,
-    visibility,
-  ])
+  }, [address, weather_condition, date, light_condition, visibility])
 
   return (
     <Fragment>
       <NavBar />
       <div className="predition-wrapper">
         <Dropdown
-          title="LATITUDE"
-          value={latitude}
-          setValue={setlatitude}
+          title="ADDRESS"
+          value={'address'}
+          setValue={setaddress}
           inputType="number"
-          data={data && data.map((item: any) => item.latitude)}
+          data={data && data.map((item: any) => item.address)}
           loading={loading}
         />
+        <div className="prediction-grid">
+          <Dropdown
+            title="DATE"
+            value={date}
+            setValue={setdate}
+            inputType="text"
+            data={data && data.map((item: any) => item.date)}
+            loading={loading}
+          />
 
-        <Dropdown
-          title="LONGITUDE"
-          value={longitude}
-          setValue={setlongitude}
-          inputType="number"
-          data={data && data.map((item: any) => item.longitude)}
-          loading={loading}
-        />
+          <Dropdown
+            title="WEATHER CONDITION"
+            value={weather_condition}
+            setValue={setweather_condition}
+            inputType="text"
+            data={data && data.map((item: any) => item.weather_condition)}
+            loading={loading}
+          />
 
-        <Dropdown
-          title="DATE"
-          value={date}
-          setValue={setdate}
-          inputType="text"
-          data={data && data.map((item: any) => item.date)}
-          loading={loading}
-        />
-
-        <Dropdown
-          title="WEATHER CONDITION"
-          value={weather_condition}
-          setValue={setweather_condition}
-          inputType="text"
-          data={data && data.map((item: any) => item.weather_condition)}
-          loading={loading}
-        />
-
-        <Dropdown
-          title="LIGHT CONDITION"
-          value={light_condition}
-          setValue={setlight_condition}
-          inputType="text"
-          data={data && data.map((item: any) => item.light_condition)}
-          loading={loading}
-        />
-        <Dropdown
-          title="VISIBILITY"
-          value={visibility}
-          setValue={setvisibility}
-          inputType="number"
-          data={data && data.map((item: any) => item.visibility)}
-          loading={loading}
-        />
+          <Dropdown
+            title="LIGHT CONDITION"
+            value={light_condition}
+            setValue={setlight_condition}
+            inputType="text"
+            data={data && data.map((item: any) => item.light_condition)}
+            loading={loading}
+          />
+          <Dropdown
+            title="VISIBILITY"
+            value={visibility}
+            setValue={setvisibility}
+            inputType="number"
+            data={data && data.map((item: any) => item.visibility)}
+            loading={loading}
+          />
+        </div>
       </div>
       <button className="hero-button" onClick={() => handlePredict()}>
         Start Prediction
