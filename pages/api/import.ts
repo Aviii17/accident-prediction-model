@@ -26,6 +26,8 @@ const csvImport = async () => {
         time: item.time || null,
         date: item.date || null,
         address: item.address || null,
+        latitude: item.latitude || null,
+        longitude: item.longitude || null,
         weather_condition: item.weather_condition || null,
         light_condition: item.light_condition || null,
         visibility: item.visibility || null,

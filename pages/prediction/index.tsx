@@ -122,7 +122,7 @@ const Prediction = () => {
       <NavBar />
       <div className="predition-wrapper">
         <Dropdown
-          title="ADDRESS"
+          title="LOCATION"
           value={address}
           setValue={setaddress}
           inputType="text"
