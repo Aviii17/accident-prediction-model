@@ -90,7 +90,9 @@ const Prediction = () => {
     const result: any = list.filter((item: any) => {
       let match = false
       if (address) {
-        match = item.address === address
+        match = item.address.includes(
+          address.replace(/[^A-Z0-9]+/gi, ' ').split(/(\s+)/)
+        )
       }
       // if (weather_condition) {
       //   match = item.weather_condition === weather_condition
