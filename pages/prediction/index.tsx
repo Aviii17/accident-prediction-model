@@ -20,6 +20,10 @@ const Dropdown = ({
 }) => {
   const [open, setopen] = useState(false)
 
+  useEffect(() => {
+    value && setopen(true)
+  }, [value])
+
   return (
     <div
       className="input-wrapper"
@@ -89,9 +93,15 @@ const Prediction = () => {
     setLoading(true)
     const result: any = list.filter((item: any) => {
       let match = false
-      if (address) {
-        match = item.address.includes(
-          address.replace(/[^A-Z0-9]+/gi, ' ').split(/(\s+)/)
+
+      if (address && item.address) {
+        const addressArr = address
+          .toLowerCase()
+          .replace(/[^A-Z0-9]+/gi, '_')
+          .split('_')
+          .filter((v) => v !== '')
+        match = addressArr.every((add) =>
+          item.address.toLowerCase().includes(add)
         )
       }
       // if (weather_condition) {
