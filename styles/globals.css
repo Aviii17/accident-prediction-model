@@ -17,6 +17,15 @@ a {
   text-decoration: none;
 }
 
+.link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.link:hover {
+  color: blue;
+}
+
 #__next {
   display: flex;
   flex-direction: column;
@@ -59,7 +68,6 @@ a {
   top: 60%;
   left: 0;
   right: 0;
-  margin: auto;
   z-index: 1;
 }
 
@@ -75,8 +83,7 @@ a {
   font-weight: bold;
   line-height: 1;
   display: block;
-  margin: auto;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 button {
@@ -119,12 +126,12 @@ nav a {
 }
 
 .predition-wrapper {
-
   padding: 2rem;
   align-items: center;
   justify-content: center;
-  max-width: 900px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
 }
 
 .prediction-grid {
@@ -136,6 +143,7 @@ nav a {
   display: block;
   margin: 1rem 2rem;
   position: relative;
+  min-width: 800px;
 }
 
 .input-wrapper label {

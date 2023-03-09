@@ -167,10 +167,10 @@ const Prediction = () => {
             loading={loading}
           />
         </div> */}
+        <button className="hero-button" onClick={() => handlePredict()}>
+          Start Prediction
+        </button>
       </div>
-      <button className="hero-button" onClick={() => handlePredict()}>
-        Start Prediction
-      </button>
     </Fragment>
   )
 }
