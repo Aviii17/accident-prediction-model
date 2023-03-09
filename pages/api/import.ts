@@ -32,6 +32,7 @@ const csvImport = async () => {
         light_condition: item.light_condition || null,
         visibility: item.visibility || null,
         causes: item.causes || null,
+        view_on_map: item.view_on_map || null,
       }
     })
     cache.set('accident_list', JSON.stringify(result))

@@ -1,6 +1,5 @@
-import axios from 'axios'
 import { useRouter } from 'next/router'
-import React, { Fragment, ReactNode, useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import NavBar from '../../components/NavBar'
 import { useAccident } from '../../context/accidentContext'
 
@@ -64,10 +63,10 @@ const Dropdown = ({
 
 const Prediction = () => {
   const [address, setaddress] = useState('')
-  const [weather_condition, setweather_condition] = useState('')
-  const [date, setdate] = useState('')
-  const [light_condition, setlight_condition] = useState('')
-  const [visibility, setvisibility] = useState(0)
+  // const [weather_condition, setweather_condition] = useState('')
+  // const [date, setdate] = useState('')
+  // const [light_condition, setlight_condition] = useState('')
+  // const [visibility, setvisibility] = useState(0)
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
 
@@ -86,21 +85,21 @@ const Prediction = () => {
       if (address) {
         match = item.address === address
       }
-      if (weather_condition) {
-        match = item.weather_condition === weather_condition
-      }
+      // if (weather_condition) {
+      //   match = item.weather_condition === weather_condition
+      // }
 
-      if (light_condition) {
-        match = item.light_condition === light_condition
-      }
+      // if (light_condition) {
+      //   match = item.light_condition === light_condition
+      // }
 
-      if (Number(visibility)) {
-        match = Number(item.visibility) === Number(visibility)
-      }
+      // if (Number(visibility)) {
+      //   match = Number(item.visibility) === Number(visibility)
+      // }
 
-      if (date) {
-        match = item.date === date
-      }
+      // if (date) {
+      //   match = item.date === date
+      // }
 
       return match
     })
@@ -115,7 +114,10 @@ const Prediction = () => {
 
     return () => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [address, weather_condition, date, light_condition, visibility])
+  }, [
+    address,
+    // weather_condition, date, light_condition, visibility
+  ])
 
   return (
     <Fragment>
@@ -129,7 +131,7 @@ const Prediction = () => {
           data={data && data.map((item: any) => item.address)}
           loading={loading}
         />
-        <div className="prediction-grid">
+        {/* <div className="prediction-grid">
           <Dropdown
             title="DATE"
             value={date}
@@ -164,7 +166,7 @@ const Prediction = () => {
             data={data && data.map((item: any) => item.visibility)}
             loading={loading}
           />
-        </div>
+        </div> */}
       </div>
       <button className="hero-button" onClick={() => handlePredict()}>
         Start Prediction

@@ -32,7 +32,11 @@ const SinglePrediciton = () => {
               </p>
               <p>
                 <span className="bold">Cause:&nbsp;</span>
-                {data.causes}
+                {data.causes || '-'}
+              </p>
+              <p>
+                <span className="bold">View on map:&nbsp;</span>
+                {data.view_on_map || '-'}
               </p>
               <p>
                 <span className="bold">Summary:&nbsp;</span>
