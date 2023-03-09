@@ -83,7 +83,11 @@ export default function Home() {
             />
           )} */}
           {/* {uploading && <div className="hero-button">Uploading</div>} */}
-          <Link className={`hero-button`} href={'/prediction'}>
+          <Link
+            className={`hero-button`}
+            style={{ margin: 'auto' }}
+            href={'/prediction'}
+          >
             START PREDICITION
           </Link>
         </div>
