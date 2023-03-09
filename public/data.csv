@@ -1,5 +1,5 @@
 accident_id,date,time,latitude,longitude,address,no_of_vehicle,road_classification,collison_type,weather_condition,light_condition,visibility,severnity,causes,view_on_map
-2.02E+14,12-08-2022,09:45:00,18.447118,73.837871,"54/24, Mumbai Banglore Highway, Ambegaon Budruk, Pune 411041, Maharashtra,Ambegaon Budruk Pune India",2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,1,https://goo.gl/maps/qP5wvTqMfxxjdJ3v8
+2.02E+14,12-08-2022,09:45:00,18.447118,73.837871,"54/24, Mumbai Banglore Highway, Ambegaon Budruk, Pune 411041, Maharashtra,Ambegaon Budruk Pune India",2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,1,"https://www.google.com/maps/@18.4459432,73.8358715,3a,75y,320.42h,58.18t/data=!3m7!1e1!3m5!1s2-OWH-2KzfupB2KWiRthcg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D2-OWH-2KzfupB2KWiRthcg%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D318.76816%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"
 2.02E+14,29-06-2022,12:50:00,18.466101,73.817034,"60/215, Mumbai Bangalore Highway, Wadgaon, Pune 411041, Maharashtra Wadgaon Pune India",2,local road,vehicle to pedestrian,sunny,day,75,grievous injury,2,https://goo.gl/maps/qP5wvTqMfxxjdJ3v9
 2.02E+14,19-08-2022,06:00:00,18.46094,73.821872,"60/206, Mumbai Bangalore Highway, Wadgaon, Pune 411041, Maharashtra Wadgaon Pune India",2,local road,vehicle to vehicle,sunny,night,100,grievous injury,3,https://goo.gl/maps/qP5wvTqMfxxjdJ3v10
 2.02E+14,12-06-2022,09:42:00,18.456142,73.820632,"50, Dhayari Road, Sinhagad Technical Societies Narhe Campus, Pune 411041, Maharashtr Sinhagad Technical Societies Narhe Campus Pune India",1,local road,vehicle to pedestrian,sunny,day,75,simple injury,4,https://goo.gl/maps/qP5wvTqMfxxjdJ3v11
@@ -17,18 +17,18 @@ accident_id,date,time,latitude,longitude,address,no_of_vehicle,road_classificati
 2.02E+12,11-01-2021,09:30:00,18.453996,73.827851,,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,16,https://goo.gl/maps/qP5wvTqMfxxjdJ3v23
 2.02E+15,08-02-2021,19:00:00,18.473798,73.822127,"39/10, Narveer Tanaji Malusare Path, Niranjan Park, Pune 411051, Maharashtra Niranjan Park Pune India",1,local road,vehicle to pedestrian,sunny,night,100,grievous injury,17,https://goo.gl/maps/qP5wvTqMfxxjdJ3v24
 2.02E+14,23-10-2021,12:20:00,18.456559,73.825807,18,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,18,https://goo.gl/maps/qP5wvTqMfxxjdJ3v25
-2.02E+14,07-05-2021,03:20:00,18.459388,73.825035,19,1,expressway,vehicle to object,sunny,night,100,simple injury,19,https://goo.gl/maps/qP5wvTqMfxxjdJ3v26
-2.02E+14,17sepr2021,09:30:00,18.463449,73.819123,20,1,local road,vehicle to pedestrian,sunny,night,100,fatal,20,https://goo.gl/maps/qP5wvTqMfxxjdJ3v27
+2.02E+14,07-05-2021,03:20:00,18.459388,73.825035,"44/85, Katraj Mumbai Bypass, Kudale Baug, Pune 411046, MaharashtraKudale Baug Pune India",1,expressway,vehicle to object,sunny,night,100,simple injury,19,https://goo.gl/maps/qP5wvTqMfxxjdJ3v26
+2.02E+14,17sepr2021,09:30:00,18.463449,73.819123,"60/206, Mumbai Bangalore Highway, Wadgaon, Pune 411041, Maharashtra Wadgaon Pune India",1,local road,vehicle to pedestrian,sunny,night,100,fatal,20,https://goo.gl/maps/qP5wvTqMfxxjdJ3v27
 2.02E+14,26-09-2021,12:30:00,18.463449,73.819123,21,1,local road,vehicle to pedestrian,sunny,day,100,grievous injury,21,https://goo.gl/maps/qP5wvTqMfxxjdJ3v28
 2.02E+14,04-11-2021,16:00:00,18.463449,73.819123,22,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,22,https://goo.gl/maps/qP5wvTqMfxxjdJ3v29
 2.02E+14,05-10-2021,09:30:00,18.463156,73.819185,23,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,23,https://goo.gl/maps/qP5wvTqMfxxjdJ3v30
 2.02E+14,25-01-2021,17:20:00,18.457953,73.826365,24,2,local road,vehicle to vehicle,sunny,twilight,100,fatal,24,https://goo.gl/maps/qP5wvTqMfxxjdJ3v31
 2.02E+14,18-02-2021,16:30:00,18.457953,73.826365,25,2,expressway,vehicle to vehicle,sunny,day,75,fatal,25,https://goo.gl/maps/qP5wvTqMfxxjdJ3v32
-2.02E+14,11-01-2021,15:00:00,18.452562,73.828921,26,2,local road,vehicle to vehicle,sunny,day,100,fatal,26,https://goo.gl/maps/qP5wvTqMfxxjdJ3v33
+2.02E+14,11-01-2021,15:00:00,18.452562,73.828921,"57/30, Ambegaon Road, Manaji Nagar, Pune 411041, MaharashtraManaji Nagar Pune India",2,local road,vehicle to vehicle,sunny,day,100,fatal,26,https://goo.gl/maps/qP5wvTqMfxxjdJ3v33
 2.02E+14,15-01-2021,19:00:00,18.452562,73.828921,27,2,national highway,vehicle to vehicle,sunny,twilight,100,fatal,27,https://goo.gl/maps/qP5wvTqMfxxjdJ3v34
-2.02E+14,23-10-2021,12:20:00,18.456559,73.825507,28,2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,28,https://goo.gl/maps/qP5wvTqMfxxjdJ3v35
-2.02E+14,07-05-2021,03:20:00,18.459388,73.825035,29,1,expressway,vehicle to object,sunny,night,100,simple injury,29,https://goo.gl/maps/qP5wvTqMfxxjdJ3v36
-2.02E+14,17-09-2021,21:30:00,18.463449,73.819123,30,1,local road,vehicle to pedestrian,sunny,night,100,fatal,30,https://goo.gl/maps/qP5wvTqMfxxjdJ3v37
+2.02E+14,23-10-2021,12:20:00,18.456559,73.825507,"Bangalore Mumbai Highway, Khedekar Nagar, Pune 411041, Maharashtra Khedekar Nagar Pune India28",2,national highway,vehicle to vehicle,sunny,day,100,grievous injury,28,https://goo.gl/maps/qP5wvTqMfxxjdJ3v35
+2.02E+14,07-05-2021,03:20:00,18.459388,73.825035,"44/85, Katraj Mumbai Bypass, Kudale Baug, Pune 411046, Maharashtra Kudale Baug Pune India",1,expressway,vehicle to object,sunny,night,100,simple injury,29,https://goo.gl/maps/qP5wvTqMfxxjdJ3v36
+2.02E+14,17-09-2021,21:30:00,18.463449,73.819123,,1,local road,vehicle to pedestrian,sunny,night,100,fatal,30,https://goo.gl/maps/qP5wvTqMfxxjdJ3v37
 2.02E+14,26-09-2021,12:30:00,18.463449,73.819123,31,1,local road,vehicle to pedestrian,sunny,day,100,grievous injury,31,https://goo.gl/maps/qP5wvTqMfxxjdJ3v38
 2.02E+14,04-11-2021,16:00:00,18.463449,73.819123,32,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,32,https://goo.gl/maps/qP5wvTqMfxxjdJ3v39
 2.02E+14,05-10-2021,21:30:00,18.463156,73.819185,33,1,national highway,vehicle to pedestrian,sunny,day,100,grievous injury,33,https://goo.gl/maps/qP5wvTqMfxxjdJ3v40
@@ -47,7 +47,7 @@ accident_id,date,time,latitude,longitude,address,no_of_vehicle,road_classificati
 2.02E+14,16-12-2021,09:00:00,18.459358,73.823597,46,2,local road,vehicle to vehicle,sunny,day,100,grievous injury,46,https://goo.gl/maps/qP5wvTqMfxxjdJ3v53
 2.02E+14,22-10-2021,09:15:00,18.452097,73.829342,47,2,national highway,vehicle to vehicle,sunny,night,100,fatal,47,https://goo.gl/maps/qP5wvTqMfxxjdJ3v54
 2.02E+14,18-04-2021,09:00:00,18.452097,73.829342,48,2,local road,vehicle to vehicle,sunny,day,50,grievous injury,48,https://goo.gl/maps/qP5wvTqMfxxjdJ3v55
-2.02E+14,11-01-2021,08:15:00,18.449303,73.832373,49,2,national highway,vehicle to vehicle,sunny,day,15,grievous injury,49,https://goo.gl/maps/qP5wvTqMfxxjdJ3v56
+2.02E+14,11-01-2021,08:15:00,18.449303,73.832373,"Mumbai Bangalore Highway, Manaji Nagar, Pune 411041, Maharashtra Manaji Nagar Pune India",2,national highway,vehicle to vehicle,sunny,day,15,grievous injury,49,https://goo.gl/maps/qP5wvTqMfxxjdJ3v56
 2.02E+14,28-09-2021,15:05:00,18.463951,73.819222,50,2,national highway,vehicle to vehicle,sunny,day,25,fatal,50,https://goo.gl/maps/qP5wvTqMfxxjdJ3v57
 2.02E+14,17-08-2021,08:30:00,18.461316,73.821298,51,2,national highway,vehicle to vehicle,sunny,night,15,fatal,51,https://goo.gl/maps/qP5wvTqMfxxjdJ3v58
 2.02E+14,23-11-2021,10:30:00,18.461316,73.821298,52,2,local road,vehicle to vehicle,sunny,day,25,grievous injury,52,https://goo.gl/maps/qP5wvTqMfxxjdJ3v59
