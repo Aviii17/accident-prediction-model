@@ -74,7 +74,14 @@ const Prediction = () => {
   const router = useRouter()
 
   const handlePredict = () => {
-    if (!data || data.length === 0 || !data[0] || !(data[0] as any)._id) return
+    if (
+      !address ||
+      !data ||
+      data.length === 0 ||
+      !data[0] ||
+      !(data[0] as any)._id
+    )
+      return router.push(`prediction/not-found`)
     router.push(`prediction/${(data[0] as any)._id}`)
   }
 
@@ -103,7 +110,7 @@ const Prediction = () => {
 
       return match
     })
-    setData(result && result.length > 0 ? result : list)
+    setData(result && result.length > 0 ? result : !address ? list : [])
     return setLoading(false)
   }
 
