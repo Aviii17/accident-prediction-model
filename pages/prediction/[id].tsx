@@ -38,7 +38,7 @@ const SinglePrediciton = () => {
                 <span className="bold">View on map:&nbsp;</span>
                 {(data.view_on_map && (
                   <a className="link" href={data.view_on_map}>
-                    {data.view_on_map}
+                    Click Here...
                   </a>
                 )) ||
                   '-'}
