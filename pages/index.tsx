@@ -3,59 +3,6 @@ import Link from 'next/link'
 import NavBar from '../components/NavBar'
 
 export default function Home() {
-  // const [csvUploaded, setCsvUploaded] = useState(false)
-  // const [uploading, setuploading] = useState(false)
-
-  // const checkCSV = () => {
-  //   axios
-  //     .request({
-  //       method: 'GET',
-  //       url: `http://localhost:4000/csv/check`,
-  //     })
-  //     .then((res) => {
-  //       if (!res || !res.data) return
-  //       return setCsvUploaded(res.data)
-  //     })
-  //     .catch((err) => {
-  //       console.log(err)
-  //       return null
-  //     })
-  // }
-
-  // let timer: any
-  // const handleCSVUpload = (e: any) => {
-  //   if (timer) clearTimeout(timer)
-  //   setuploading(true)
-  //   timer = setTimeout(() => {
-  //     let input = e.target.files[0]
-  //     console.log(input)
-  //     if (input) {
-  //       let form = new FormData()
-  //       form.append('csv', input)
-
-  //       axios
-  //         .request({
-  //           method: 'POST',
-  //           url: `http://localhost:4000/csv/upload`,
-  //           data: form,
-  //           headers: {
-  //             'Content-Type': 'multipart/form-data',
-  //           },
-  //         })
-
-  //         .then((res) => {
-  //           if (!res || !res.data) return
-  //           return setCsvUploaded(true)
-  //         })
-  //         .catch((err) => {
-  //           console.log(err)
-  //           return null
-  //         })
-  //       setuploading(false)
-  //     }
-  //   }, 1000)
-  // }
-
   return (
     <div>
       <Head>
@@ -65,24 +12,9 @@ export default function Home() {
       </Head>
       <div className="hero">
         <div className="hero-img"></div>
-        {/* <nav>
-          <Link href={'/'}>HOME</Link>
-          <Link href={'/contact-us'}>CONTACT US</Link>
-          <Link href={'/about-us'}>ABOUT</Link>
-          <Link href={'/how-to-use'}>HOW TO USE</Link>
-        </nav> */}
+
         <NavBar style={{ borderBottom: 'none' }} />
         <div className="hero-button-wrapper">
-          {/* {!uploading && !csvUploaded && (
-            <input
-              className="hero-button"
-              type="file"
-              accept="text/csv"
-              onChange={(e) => handleCSVUpload(e)}
-              // onClick={() => handleUpload()}
-            />
-          )} */}
-          {/* {uploading && <div className="hero-button">Uploading</div>} */}
           <Link
             className={`hero-button`}
             style={{ margin: 'auto' }}

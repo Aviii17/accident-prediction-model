@@ -94,16 +94,20 @@ const Prediction = () => {
     const result: any = list.filter((item: any) => {
       let match = false
 
+      // Search Filter Logic
       if (address && item.address) {
         const addressArr = address
-          .toLowerCase()
-          .replace(/[^A-Z0-9]+/gi, '_')
-          .split('_')
-          .filter((v) => v !== '')
+          .toLowerCase() // coverts to small case
+          .replace(/[^A-Z0-9]+/gi, '_') // replaces all symbols to underscore "_"
+          .split('_') // splits based on underscore
+          .filter((v) => v !== '') // Trims and sanitize empty selections
+
+        // Matches every selected word in given list
         match = addressArr.every((add) =>
           item.address.toLowerCase().includes(add)
         )
       }
+
       // if (weather_condition) {
       //   match = item.weather_condition === weather_condition
       // }

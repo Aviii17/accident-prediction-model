@@ -9,6 +9,7 @@ const csvImport = async () => {
     const list: Array<any> = []
     const filePath = path.resolve('./public', 'data.csv')
 
+    // Reads CSV FIle
     await new Promise((resolve, reject) => {
       fs.createReadStream(filePath)
         .pipe(csv())
@@ -19,7 +20,11 @@ const csvImport = async () => {
           resolve(list)
         })
     })
+
+    // Snatizes read file
     const santized = JSON.parse(JSON.stringify(list).replace(/"\s+|\s+"/g, '"'))
+
+    // Looping through list
     const result = santized.map((item: any, i: number) => {
       return {
         _id: `accident_no_${i}`,

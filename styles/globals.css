@@ -34,8 +34,9 @@ a {
 }
 
 #nprogress .bar {
-  background: #8EC3B0 !important;
-  height: 4px;
+  /* background: #8EC3B0 !important; */
+  background-color: red !important;
+  height: 14px;
 }
 
 #nprogress .peg {
